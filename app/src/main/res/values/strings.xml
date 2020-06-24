@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LPI_INNOVATION_HUB</string>
+    <string name="name"> Folarin Isaac Oluwafemi</string>
+    <string name="welcome"> You are welcome </string>
+    <string name="log"> Last login:</string>
+    <string name="scan"> Scan qr code</string>
+    <string name="activity"> activities log</string>
+    <string name="members"> members</string>
+</resources>
