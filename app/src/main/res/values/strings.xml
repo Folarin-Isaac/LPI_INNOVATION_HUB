@@ -6,4 +6,7 @@
     <string name="scan"> Scan qr code</string>
     <string name="activity"> activities log</string>
     <string name="members"> members</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
