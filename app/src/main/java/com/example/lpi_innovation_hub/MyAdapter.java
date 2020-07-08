@@ -22,14 +22,14 @@ public class MyAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                AllFragment allFragment = new AllFragment();
-                return allFragment;
+                FragmentAll fragmentAll = new FragmentAll();
+                return fragmentAll;
             case 1:
-                LoginFragment loginFragment = new LoginFragment();
-                return loginFragment;
+                FragmentLogin fragmentLogin = new FragmentLogin();
+                return fragmentLogin;
             case 2:
-                SubscribedFragment subscribedFragment = new SubscribedFragment();
-                return subscribedFragment;
+                FragmentSubscribed fragmentSubscribed = new FragmentSubscribed();
+                return fragmentSubscribed;
                 default:
                     return null;
         }

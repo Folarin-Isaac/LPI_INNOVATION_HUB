@@ -6,7 +6,42 @@
     <string name="scan"> Scan qr code</string>
     <string name="activity"> activities log</string>
     <string name="members"> members</string>
+    <string name="date"> Fri,23 July 2020 @10:42am</string>
+    <string name="acctDate"> 23 July 2020</string>
+    <string name="login"> Last login</string>
+    <string name="login_date"> Mon, 22 June 2020 @4;44pm </string>
+    <string name="last_seen"> Last seen </string>
+    <string name="seen_date"> 14 Sep 2019</string>
+    <string name="hub"> Hub presence</string>
+    <string name="button"> logged out</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="chat_names">
+        <item> Adedeji Gideon </item>
+        <item> Folarin Isaac</item>
+        <item> Arinze Onyeasigbulem </item>
+        <item> Deborah Joseph</item>
+        <item> Aina Esther</item>
+        <item> Adenike Christianah</item>
+        <item> Paul Okeke </item>
+        <item> Emmanuel John </item>
+        <item> Dickson Michael</item>
+        <item> Mustapha Michael</item>
+        <item> Badmus GodsWill</item>
+    </string-array>
+
+    <string-array name="chat_email">
+        <item> adedejigideon12@gmail.com</item>
+        <item> folarinisaac36@gmail.com</item>
+        <item> christogonus45@gmail.com</item>
+        <item> josdebum@gmail.com</item>
+        <item> ainaesther@gmail.com</item>
+        <item> nikkychristy@gmail.com</item>
+        <item> okekepaulo@gmail.com</item>
+        <item> emamaueljohnny@gmail.com</item>
+        <item> michaeldisckson@gmail.com</item>
+        <item> mustaphamichael25@gmail.com</item>
+        <item> badmus205@gmail.com</item>
+    </string-array>
+
+
 </resources>
