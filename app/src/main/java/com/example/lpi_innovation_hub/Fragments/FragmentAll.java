@@ -1,8 +1,6 @@
-package com.example.lpi_innovation_hub;
+package com.example.lpi_innovation_hub.Fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.lpi_innovation_hub.Activity.All;
+import com.example.lpi_innovation_hub.Adapters.RecyclerAdapter;
+import com.example.lpi_innovation_hub.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +41,8 @@ public class FragmentAll extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         listAll = new ArrayList<>();
+
+        //List of all items to be displayed in the RecyclerView
         listAll.add(new All("Adedeji Gideon", "adedejigideon12@gmail.com", R.drawable.man));
         listAll.add(new All("Folarin Isaac", "folarinisaac36@gmail.com", R.drawable.my_passport));
         listAll.add(new All("Arinze Onyeasigbulem", "christogonus45@gmail.com", R.drawable.man));

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".member_details"
+    tools:context=".Activity.MemberDetails"
     android:background="@drawable/data_model">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="230dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +22,8 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="130dp"
             android:layout_height="130dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFF"
             android:layout_centerInParent="true"
             android:src="@drawable/my_passport"/>
 
@@ -34,6 +36,10 @@
         android:background="@drawable/tab_round"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabGravity="fill"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/relativeLayout">
@@ -44,8 +50,7 @@
         android:id="@+id/detailsViewPager"
         app:layout_constraintTop_toBottomOf="@id/detailsTab"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_height="wrap_content"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

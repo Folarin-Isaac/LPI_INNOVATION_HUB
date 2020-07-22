@@ -1,4 +1,4 @@
-package com.example.lpi_innovation_hub;
+package com.example.lpi_innovation_hub.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,10 +9,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.example.lpi_innovation_hub.R;
+
 public class Splash_Screen extends AppCompatActivity {
 
    private ImageView imgView;
-   private static int splashTimeOut=5000;
+   private static int splashTimeOut = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class Splash_Screen extends AppCompatActivity {
         //Declare an image to show the animation
         imgView = (ImageView) findViewById(R.id.imgView);
 
+        //Splash screen activity to open the main activity after the time out
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

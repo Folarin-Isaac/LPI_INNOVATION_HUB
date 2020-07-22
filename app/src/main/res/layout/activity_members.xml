@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/data_model"
     android:layout_height="match_parent"
-    tools:context=".Members">
+    tools:context=".Activity.Members">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -16,7 +16,6 @@
             app:tabGravity="fill"
             app:layout_constraintTop_toTopOf="parent"
             app:tabMaxWidth="0dp"
-            app:tabSelectedTextColor="#FFFFFF"
             app:tabIndicatorGravity="stretch"
             app:tabMode="fixed"
             app:tabIndicatorColor="@color/yellow"
@@ -24,6 +23,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -1,4 +1,4 @@
-package com.example.lpi_innovation_hub;
+package com.example.lpi_innovation_hub.Activity;
 
 public class All {
     private String Name;
@@ -14,7 +14,6 @@ public class All {
         Photo = photo;
     }
     //Getters
-
     public String getName() {
         return Name;
     }
@@ -26,8 +25,8 @@ public class All {
     public int getPhoto() {
         return Photo;
     }
-    //Setters
 
+    //Setters
     public void setName(String name) {
         Name = name;
     }

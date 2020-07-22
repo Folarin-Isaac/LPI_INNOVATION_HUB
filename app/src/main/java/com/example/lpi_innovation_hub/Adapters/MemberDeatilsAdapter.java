@@ -1,10 +1,13 @@
-package com.example.lpi_innovation_hub;
+package com.example.lpi_innovation_hub.Adapters;
 
 import android.content.Context;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.lpi_innovation_hub.Fragments.FragmentActivities;
+import com.example.lpi_innovation_hub.Fragments.FragmentDetails;
 
 public class MemberDeatilsAdapter extends FragmentPagerAdapter {
     private Context myContext;
@@ -21,11 +24,11 @@ public class MemberDeatilsAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                FragmentActivities fragmentActivities = new FragmentActivities();
-                return fragmentActivities;
-            case 1:
                 FragmentDetails fragmentDetails = new FragmentDetails();
                 return fragmentDetails;
+            case 1:
+                FragmentActivities fragmentActivities = new FragmentActivities();
+                return fragmentActivities;
                 default:
                     return null;
         }
@@ -35,6 +38,7 @@ public class MemberDeatilsAdapter extends FragmentPagerAdapter {
     //This counts the total number of tabs
     @Override
     public int getCount() {
+
         return tooTabs;
     }
 }

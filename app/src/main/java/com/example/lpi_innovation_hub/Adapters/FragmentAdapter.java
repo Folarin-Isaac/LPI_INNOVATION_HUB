@@ -1,4 +1,4 @@
-package com.example.lpi_innovation_hub;
+package com.example.lpi_innovation_hub.Adapters;
 
 import android.content.Context;
 
@@ -6,12 +6,16 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class MyAdapter extends FragmentPagerAdapter {
+import com.example.lpi_innovation_hub.Fragments.FragmentAll;
+import com.example.lpi_innovation_hub.Fragments.FragmentLogin;
+import com.example.lpi_innovation_hub.Fragments.FragmentSubscribed;
+
+public class FragmentAdapter extends FragmentPagerAdapter {
 
     private Context myContext;
     int totalTabs;
 
-    public MyAdapter(Context context, FragmentManager fm, int totalTabs){
+    public FragmentAdapter(Context context, FragmentManager fm, int totalTabs){
         super(fm);
         myContext = context;
         this.totalTabs = totalTabs;
@@ -35,7 +39,7 @@ public class MyAdapter extends FragmentPagerAdapter {
         }
 
     }
-    //this counts the total number of tabs
+    //This counts the total number of tabs available
     @Override
     public int getCount() {
         return totalTabs;
